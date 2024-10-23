@@ -1,0 +1,1 @@
+export { SlideUpAnimation } from "./animation";
