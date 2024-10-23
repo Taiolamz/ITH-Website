@@ -1,4 +1,4 @@
-import { path } from "framer-motion/client";
+// import { path } from "framer-motion/client";
 import {
   FacebookIcon,
   InstaIcon,

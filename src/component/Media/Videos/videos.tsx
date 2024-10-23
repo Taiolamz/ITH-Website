@@ -1,22 +1,22 @@
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
 import { Section } from "../../Reusables/Container";
 import { videos } from "./lists";
 import { isMobile } from "../../Helpers/helpers";
 import { IoPlayOutline } from "react-icons/io5";
 
 const Videos = () => {
-  const videoRef = useRef(null); // Reference to the video element
-  const [isPlaying, setIsPlaying] = useState(false); // Manage play/pause state
+  // const videoRef = useRef(null); // Reference to the video element
+  // const [isPlaying, setIsPlaying] = useState(false); // Manage play/pause state
 
-  const handlePlayPause = () => {
-    const video = videoRef.current;
-    if (!isPlaying) {
-      (video as any).play(); // Play the video
-    } else {
-      (video as any).pause(); // Pause the video
-    }
-    setIsPlaying(!isPlaying); // Toggle the state
-  };
+  // const handlePlayPause = () => {
+  //   const video = videoRef.current;
+  //   if (!isPlaying) {
+  //     (video as any).play(); // Play the video
+  //   } else {
+  //     (video as any).pause(); // Pause the video
+  //   }
+  //   setIsPlaying(!isPlaying); // Toggle the state
+  // };
   return (
     <Section className="flex flex-col justify-center mb-20 lg:overflow-x-auto overflow-x-hidden">
       <p
@@ -30,7 +30,7 @@ const Videos = () => {
       <div className="lg:grid lg:grid-cols-2 grid-rows-1 space-y-4 lg:space-y-0 lg:gap-2">
         <div data-aos="fade-right" data-aos-duration="700" className="">
           {videos.slice(0, 1).map((chi, idx) => {
-            const { title, sub_title, date, image, src, type } = chi;
+            const { title, sub_title, date, src, type } = chi;
             return (
               <div
                 className="h-full grid group place-items-center relative"
@@ -79,7 +79,7 @@ const Videos = () => {
           className="lg:grid lg:grid-rows-2 rows-1 space-y-4 lg:space-y-0  gap-2"
         >
           {videos.slice(1).map((chi, idx) => {
-            const { title, sub_title, date, image, src, type } = chi;
+            const { title, sub_title, date, src, type } = chi;
             return (
               <div
                 className="h-full grid group  place-items-center relative"

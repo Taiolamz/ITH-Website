@@ -1,6 +1,6 @@
-import { Arrow60Deg } from "../../../assets/icons";
-import { HeroImage } from "../../../assets/images";
-import TrustedPartners from "../TrustedPartners/trusted-partners";
+import { Arrow60Deg } from "../../assets/icons";
+import { HeroImage } from "../../assets/images";
+import TrustedPartners from "../Home/TrustedPartners/trusted-partners";
 
 const HeroSection = () => {
   return (
