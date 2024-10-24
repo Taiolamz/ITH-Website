@@ -3,7 +3,7 @@ import { footer, socials } from "./lists";
 
 const Footer = () => {
   return (
-    <section className="w-full bg-[#020E2A] relative overflow-x-hidden">
+    <section className="w-full bg-[#020E2A] overflow-y-hidden relative overflow-x-hidden">
       <div
         className="border-b pb-8 pt-16"
         style={{ borderBottom: ".1rem solid rgba(251, 251, 251, 0.1)" }}
@@ -61,7 +61,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex gap-3 items-center justify-center my-10">
+        <div className="flex gap-3 items-center justify-center my-10 pb-10">
           {socials.map((chi, idx) => {
             const { icon, path, label } = chi;
             const delay = 300 * idx;

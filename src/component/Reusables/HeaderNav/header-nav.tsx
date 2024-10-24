@@ -74,14 +74,16 @@ const HeaderNav = ({
                 </div>
 
                 <div
-                  className="absolute top-full flex flex-col gap-4  mt-2 p-5 rounded-[5px]  bg-white w-[210px] shadow-md
-            transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 transform scale-y-0 group-hover:scale-y-100 origin-top"
+                  className="absolute top-full flex flex-col gap-4 mt-2 p-5 rounded-[5px] bg-white w-[210px] shadow-md
+    transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 transform scale-y-0 group-hover:scale-y-100 origin-top"
                 >
                   {drop.map((subItem, subIdx) => (
                     <NavLink
                       key={subIdx}
                       to={subItem.path}
-                      className="border-b hover:font-medium ease-out transition-all duration-300   border-b-[#EEEFEF] p-3  px-10 underline text-[#014CFF] last:border-b-0"
+                      className="border-b border-b-[#EEEFEF] p-3 px-10 last:border-b-0
+        text-[#014CFF] transition-all hover:scale-105 duration-300 ease-out 
+        hover:text-[#002ECC]"
                       onClick={(e) => handleLinkClick(e, subItem.path)}
                     >
                       {subItem.label}

@@ -11,10 +11,10 @@ const TrustedPartners = () => {
         <img src={HrLine} alt="horizontal line" />
       </div>
       <motion.div
-        className="flex gap-14 px-28"
+        className="flex gap-20 px-28"
         animate={{ x: ["0%", "-100%"] }}
         transition={{
-          duration: 20,
+          duration: 10,
           repeat: Infinity,
           ease: "linear",
         }}

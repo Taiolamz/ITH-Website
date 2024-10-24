@@ -30,7 +30,7 @@ const Videos = () => {
       <div className="lg:grid lg:grid-cols-2 grid-rows-1 space-y-4 lg:space-y-0 lg:gap-2">
         <div data-aos="fade-right" data-aos-duration="700" className="">
           {videos.slice(0, 1).map((chi, idx) => {
-            const { title, sub_title, date, src, type } = chi;
+            const { title, sub_title, date, src, type,image } = chi;
             return (
               <div
                 className="h-full grid group place-items-center relative"
@@ -39,7 +39,7 @@ const Videos = () => {
                 <video
                   className="h-full w-full bg-black  rounded-[5px]"
                   controls={false}
-                  // poster={image}
+                  poster={image}
                   autoPlay={false}
                 >
                   <source src={src} type={type} />
@@ -79,7 +79,7 @@ const Videos = () => {
           className="lg:grid lg:grid-rows-2 rows-1 space-y-4 lg:space-y-0  gap-2"
         >
           {videos.slice(1).map((chi, idx) => {
-            const { title, sub_title, date, src, type } = chi;
+            const { title, sub_title, date, src, type,image } = chi;
             return (
               <div
                 className="h-full grid group  place-items-center relative"
@@ -88,7 +88,7 @@ const Videos = () => {
                 <video
                   className="h-full w-full bg-black bg-opacity-50 rounded-[5px]"
                   controls={false}
-                  // poster={image}
+                   poster={image}
                   autoPlay={false}
                 >
                   <source src={src} type={type} />

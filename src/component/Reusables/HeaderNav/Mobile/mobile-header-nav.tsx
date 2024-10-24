@@ -113,7 +113,7 @@ const MobileHeaderNav = ({
                         key={subIdx}
                         to={subItem.path}
                         onClick={(e) => handleLinkClick(e, subItem.path)}
-                        className="border-b border-b-[#EEEFEF] p-3 text-sm px-10 underline font-light text-[#212121] last:border-b-0"
+                        className="border-b border-b-[#EEEFEF] p-3 text-sm px-10 font-light text-[#212121] last:border-b-0"
                       >
                         {subItem.label}
                       </NavLink>

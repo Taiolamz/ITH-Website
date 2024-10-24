@@ -1,10 +1,5 @@
 // import { path } from "framer-motion/client";
-import {
-  FacebookIcon,
-  InstaIcon,
-  LinkedinIcon,
-  TwitterIcon,
-} from "../../../assets/icons";
+import { FacebookIcon, InstaIcon, LinkedinIcon, TwitterIcon } from "../../../assets/icons";
 
 export const footer = [
   {
