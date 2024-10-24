@@ -1,13 +1,17 @@
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
 interface FlipCardProps {
-  image: string;
-  logo: string;
-  label: string;
-  subsidiary: string;
-  content: string;
+  image?: string;
+  logo?: string;
+  label?: string;
+  subsidiary?: string;
+  content?: string;
   toPath?: string;
   onPathRoute?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
@@ -26,23 +30,33 @@ const FlipCard: React.FC<FlipCardProps> = ({
       <div className="relative w-full h-full group transition-transform duration-1000 transform-style preserve-3d hover:rotate-y-180">
         <div className="  inset-0 backface-hidden">
           <div className="relative">
-            <div className="bg-[#002887] p-5 absolute bottom-0 w-full rounded-b-[5px]">
-              <p className="text-white text-[20px] font-medium">{label}</p>
-            </div>
-            <img
-              src={image}
+            <LazyLoadComponent>
+              <div className="bg-[#002887] p-5 absolute bottom-0 w-full rounded-b-[5px]">
+                <p className="text-white text-[20px] font-medium">{label}</p>
+              </div>
+            </LazyLoadComponent>
+
+            <LazyLoadImage
+              // className="rounded-[5px] w-fit object-cover"
               alt={`about ${label}`}
-              className=" h-[478px] rounded-[5px] w-fit object-cover"
+              src={image}
+              effect="opacity"
+              wrapperProps={{
+                style: { transitionDelay: "1s" },
+              }}
             />
           </div>
         </div>
 
         <div className="absolute inset-0 backface-hidden  bg-[#002887] text-white p-5 flex flex-col  transform rotate-y-180 rounded-[5px] ">
           <div className="flex gap-5 my-5 items-center delay-700 opacity-0 duration-700 group-hover:opacity-100">
-            <img
-              src={logo}
-              alt={`about ${label}`}
+            <LazyLoadImage
               className=" w-fit object-cover"
+              src={logo}
+              effect="blur"
+              wrapperProps={{
+                style: { transitionDelay: "1s" },
+              }}
             />
             <h2 className="text-xl font-bold mb-2">{subsidiary}</h2>
           </div>

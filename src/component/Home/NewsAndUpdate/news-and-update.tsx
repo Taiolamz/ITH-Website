@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { HashButton } from "../../Reusables/Button";
 import { Section } from "../../Reusables/Container";
 import { news_and_update } from "./lists";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 
 const NewsAndUpdate = () => {
   const handleLinkClick = (
@@ -34,7 +38,22 @@ const NewsAndUpdate = () => {
               data-aos-delay={delay}
             >
               <div className="relative grid place-items-center">
-                <img src={image} alt={alt} className="w-full rounded-t-[5px]" />
+                <LazyLoadImage
+                  src={image}
+                  effect="blur"
+                  wrapperProps={{
+                    style: { transitionDelay: "1s", width: "100%" },
+                  }}
+                  alt={alt}
+                  className="w-full rounded-t-[5px]"
+                />
+                {/* <LazyLoadComponent> */}
+                {/* <img
+                    src={image}
+                    alt={alt}
+                    className="w-full rounded-t-[5px]"
+                  /> */}
+                {/* </LazyLoadComponent> */}
                 <div className="absolute inset-0 bg-black opacity-30 rounded-t-[5px]"></div>
                 <div className="absolute group grid place-items-center cursor-pointer border border-[#EDEDED] h-[80px] w-[80px] rounded-full hover:h-[100px] hover:w-[100px] transition-all duration-300 hover:bg-white hover:shadow-xl ease-in-out ">
                   <Link

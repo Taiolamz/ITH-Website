@@ -1,5 +1,6 @@
 import {
 
+  GalleryImageFive,
   GalleryImageFour,
   GalleryImageOne,
   GalleryImageThree,
@@ -11,5 +12,5 @@ export const gallery = [
   GalleryImageTwo,
   GalleryImageThree,
   GalleryImageFour,
-  GalleryImageFour,
+  GalleryImageFive,
 ];

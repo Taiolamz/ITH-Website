@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Button } from "../../Reusables/Button";
 import { Section } from "../../Reusables/Container";
 import { gallery } from "./lists";
@@ -8,23 +9,46 @@ const Gallery = () => {
       <p className="py-10 font-semibold lg:text-[28px] text-2xl text-[#5A5B5B]">
         Gallery
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  gap-3">
-        {gallery.map((chi, idx) => (
-          <div
-            key={idx}
-            className={`relative bg-cover bg-center rounded-[5px] ${
-              idx === 0
-                ? "row-span-2 col-span-2 lg:h-full h-[20rem]"
-                : "lg:h-[16rem] h-[20rem]"
-            }`}
-            style={{
-              backgroundImage: `url(${chi})`,
-              // height: idx === 0 ? "100%" : "16rem",
-            }}
-            data-aos={idx === 0 ? "fade-right" : "fade-left"}
-            data-aos-duration="1000"
-          ></div>
-        ))}
+
+      <div className="grid place-items-center bg-white shadow-lg hover:scale-[1.02] transition-all duration-300 p-3 py-8 rounded-[5px]">
+        <div className="lg:flex lg:gap-3 columns-1 lg:space-y-0 space-y-3">
+          <div className="">
+            {gallery.slice(0, 1).map((chi, idx) => (
+              <div key={idx} data-aos={"fade-right"} data-aos-duration="1000">
+                <LazyLoadImage
+                  className="w-full"
+                  src={chi}
+                  effect="blur"
+                  wrapperProps={{
+                    style: { transitionDelay: "1s" },
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="lg:grid lg:grid-cols-2 lg:gap-3 columns-1 lg:space-y-0 space-y-3">
+            {gallery.slice(1).map((chi, idx) => {
+              const delay = idx * 300;
+              return (
+                <div
+                  key={idx}
+                  data-aos={"fade-up"}
+                  data-aos-delay={delay}
+                  data-aos-duration="1000"
+                >
+                  <LazyLoadImage
+                    className="w-full"
+                    src={chi}
+                    effect="blur"
+                    wrapperProps={{
+                      style: { transitionDelay: "1s" },
+                    }}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
 
       <div

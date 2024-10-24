@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Section } from "../../Reusables/Container";
 import { recent_news } from "./lists";
 import { Link } from "react-router-dom";
@@ -33,7 +34,17 @@ const RecentNews = () => {
               data-aos-duration="1000"
             >
               <div className="relative grid place-items-center">
-                <img src={image} alt={alt} className="w-full rounded-t-[5px]" />
+                {/* <img src={image} alt={alt} className="w-full rounded-t-[5px]" /> */}
+                <LazyLoadImage
+                  src={image}
+                  effect="blur"
+                  wrapperProps={{
+                    style: { transitionDelay: "1s", width: "100%" },
+                  }}
+                  alt={alt}
+                  className="w-full rounded-t-[5px]"
+                />
+
                 <div className="absolute inset-0 bg-black opacity-30 rounded-t-[5px]"></div>
                 <div className="absolute group grid place-items-center cursor-pointer border border-[#EDEDED] h-[80px] w-[80px] rounded-full hover:h-[100px] hover:w-[100px] transition-all duration-300 hover:bg-white hover:shadow-xl ease-in-out ">
                   <Link

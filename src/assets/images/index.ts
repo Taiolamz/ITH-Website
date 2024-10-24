@@ -29,6 +29,7 @@ export { default as GalleryImageOne } from "./gallery-image-one.svg";
 export { default as GalleryImageTwo } from "./gallery-image-two.svg";
 export { default as GalleryImageThree } from "./gallery-image-three.svg";
 export { default as GalleryImageFour } from "./gallery-image-four.svg";
+export { default as GalleryImageFive } from "./gallery-image-five.svg";
 export { default as VideoImageOne } from "./video-image-one.svg";
 export { default as VideoImageTwo } from "./video-image-two.svg";
 export { default as VideoImageThree } from "./video-image-three.svg";

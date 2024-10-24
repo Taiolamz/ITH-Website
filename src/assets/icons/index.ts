@@ -18,7 +18,7 @@ export { default as TwitterBgIcon } from "./twitter-bg-icon.svg";
 export { default as HandShakeIcon } from "./handshake-icon.svg";
 export { default as BriefIcon } from "./brief-icon.svg";
 export { default as ITHLogoBlue } from "./ITHLogo-blue.svg";
-export { default as ZojatechLogo } from "./zojapay-logo.svg";
+export { default as ZojatechLogo } from "./zojatech-logo.svg";
 export { default as ZojapayLogo } from "./zojapay-logo.svg";
 export { default as ITHZLogo } from "./ith-logo.svg";
 export { default as CancelIcon } from "./cancel-icon.svg";
