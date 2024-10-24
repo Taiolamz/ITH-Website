@@ -14,7 +14,8 @@ const RecentNews = () => {
   return (
     <Section
       id="news and update"
-      className="mt-10 lg:flex lg:flex-col lg:gap-5  my-14 lg:mt-20  justify-center lg:overflow-x-auto overflow-y-hidden lg:overflow-y-hidden overflow-x-hidden"
+      // className="mt-10 lg:flex lg:flex-col lg:gap-5  my-14 lg:mt-20  justify-center lg:overflow-x-auto overflow-y-hidden lg:overflow-y-hidden overflow-x-hidden"
+      className="mt-10 lg:flex lg:flex-col lg:gap-5  my-14 lg:mt-20  justify-center"
     >
       <p
         className="text-[#5A5B5B] font-semibold lg:text-[28px] text-xl mb-5"
