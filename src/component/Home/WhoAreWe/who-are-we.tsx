@@ -1,16 +1,16 @@
 import { Section } from "../../Reusables/Container";
 import { WhoAreWeImg } from "../../../assets/images";
 import { Button } from "../../Reusables/Button";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const WhoAreWe = () => {
   const isMobile = window.innerWidth < 768;
   return (
-    <Section className="lg:mt-40 mt-10">
+    <Section className="lg:mt-36 mt-10">
       {/* <Section className="lg:flex mt-10 lg:overflow-x-auto overflow-x-hidden lg:overflow-y-auto overflow-y-hidden  lg:mt-40 lg:flex-col w-full lg:justify-center"> */}
       <div className="grid lg:grid-cols-[1.7fr_1fr] rows-2 gap-4   w-full items-center relative ">
         <div className="w-full relative">
-          <div className="bg-[#002887] lg:w-full !rounded-[5px]  lg:-mb-8 lg:ml-16 lg:h-[300px] w-full h-[40px]  absolute lg:bottom-0 -bottom-4"></div>
+          <div className="bg-[#002887] lg:w-full !rounded-[5px]  lg:-mb-8 lg:ml-8 lg:h-[300px] w-full h-[40px]  absolute lg:bottom-0 -bottom-4"></div>
 
           <div
             className="bg-white  py-2 lg:p-6 lg:px-5 px-6 pb-5  lg:py-16  rounded-[5px] lg:w-full z-10 lg:pl-14"
@@ -37,23 +37,24 @@ const WhoAreWe = () => {
           </div>
         </div>
 
-        {/* <div
+        <div
           data-aos={isMobile ? "fade-right" : "fade-left"}
           data-aos-duration="1000"
           style={{ backgroundImage: `url(${WhoAreWeImg})` }}
-          className="bg-cover object-cover lg:-ml-24 bg-center lg:mt-0 mt-5  relative w-full h-[420px] z-[561px] rounded-lg"
-        ></div> */}
-        <LazyLoadImage
+          className="bg-cover object-cover lg:-ml-24 bg-center lg:mt-0 mt-5  relative w-full lg:w-[calc(100%+6rem)] h-[420px]   rounded-lg"
+          // className="bg-cover object-cover lg:-ml-24 bg-center lg:mt-0 mt-5  relative w-full lg:w-[calc(100% +  10rem)] h-[420px]  z-[561px] rounded-lg"
+        ></div>
+        {/* <LazyLoadImage
           effect="blur"
           data-aos={isMobile ? "fade-right" : "fade-left"}
-          data-aos-duration="1000"
+          // data-aos-duration="1000"
           src={WhoAreWeImg}
           alt=""
           className="bg-cover object-cover lg:-ml-24 bg-center lg:mt-0 mt-5  relative w-full h-[420px] z-[561px] rounded-lg"
           wrapperProps={{
             style: { transitionDelay: "1s", },
           }}
-        />
+        /> */}
       </div>
     </Section>
   );

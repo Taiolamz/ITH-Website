@@ -26,9 +26,9 @@ const FlipCard: React.FC<FlipCardProps> = ({
   onPathRoute,
 }) => {
   return (
-    <div className="lg:w-full   px-2 lg:pr-0 h-[478px] perspective">
-      <div className="relative w-full h-full group transition-transform duration-1000 transform-style preserve-3d hover:rotate-y-180">
-        <div className="  inset-0 backface-hidden">
+    <div className="lg:w-full  px-2 lg:pr-0  perspective">
+      <div className="relative w-full group transition-transform duration-1000 transform-style preserve-3d hover:rotate-y-180">
+        <div className=" inset-0 backface-hidden">
           <div className="relative">
             <LazyLoadComponent>
               <div className="bg-[#002887] p-5 absolute bottom-0 w-full rounded-b-[5px]">
@@ -40,6 +40,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
               // className="rounded-[5px] w-fit object-cover"
               alt={`about ${label}`}
               src={image}
+              className="h-[478px]"
               effect="opacity"
               wrapperProps={{
                 style: { transitionDelay: "1s" },
@@ -48,7 +49,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
           </div>
         </div>
 
-        <div className="absolute inset-0 backface-hidden  bg-[#002887] text-white p-5 flex flex-col  transform rotate-y-180 rounded-[5px] ">
+        <div className="absolute inset-0 backface-hidden h-fullf  bg-[#002887] text-white p-5 flex flex-col  transform rotate-y-180 rounded-[5px] ">
           <div className="flex gap-5 my-5 items-center delay-700 opacity-0 duration-700 group-hover:opacity-100">
             <LazyLoadImage
               className=" w-fit object-cover"
@@ -61,7 +62,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
             <h2 className="text-xl font-bold mb-2">{subsidiary}</h2>
           </div>
 
-          <p className="text-left lg:text-base text-sm lg:leading-normal leading-6  font-light opacity-0 delay-500 translate-y-full transition-all duration-1000 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
+          <p className="text-left text-[200px] lg:text-base text-sm lg:leading-normal leading-6  font-light opacity-0 delay-500 translate-y-full transition-all duration-1000 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
             {content}
           </p>
 

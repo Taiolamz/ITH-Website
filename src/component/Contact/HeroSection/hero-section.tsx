@@ -17,7 +17,7 @@ const ContactHeroSection = ({
             isMobile ? MobileContactHeroImage : ContactHeroImg
           })`,
         }}
-        className="lg:h-[calc(100vh-300px)] h-screen overflow-hidden  w-full bg-cover relative bg-center"
+        className="lg:h-[calc(100vh-250px)] h-screen overflow-hidden  w-full bg-cover relative bg-center"
         ref={heroSectionRef}
       >
         <HeroHeader

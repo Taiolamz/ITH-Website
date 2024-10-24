@@ -1,5 +1,5 @@
 import {
-  GalleryImageOne,
+  // GalleryImageOne,
   GalleryImageTwo,
   GalleryImageThree,
   GalleryImageFour,
@@ -12,10 +12,11 @@ import {
   GalleryImageThirteen,
   GalleryImageFourteen,
   GalleryImageFifteen,
+  GalleryImageSixteen,
 } from "../../../../assets/images";
 
 export const all_gallery = [
-  GalleryImageOne,
+  GalleryImageSixteen,
   GalleryImageTwo,
   GalleryImageThree,
   GalleryImageFour,

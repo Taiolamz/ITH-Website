@@ -17,7 +17,7 @@ const CareerHeroSection = ({
             isMobile ? CareerMobileHeroImage : CareerHeroImage
           })`,
         }}
-        className="lg:h-[calc(100vh-300px)] h-screen overflow-hidden  w-full bg-cover relative bg-center"
+        className="lg:h-[calc(100vh-250px)] h-screen overflow-hidden  w-full bg-cover relative bg-center"
         ref={heroSectionRef}
       >
         <HeroOverlayBg opacity=".5" overlayBg="#121212" />

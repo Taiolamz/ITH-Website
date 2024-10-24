@@ -8,7 +8,7 @@ const GetInTouch = () => {
   return (
     <Section
       id="contact"
-      className=" flex flex-col  justify-center lg:overflow-x-auto overflow-y-hidden lg:overflow-y-hidden overflow-x-hidden"
+      className=" flex flex-col my-10  justify-center lg:overflow-x-auto overflow-y-hidden lg:overflow-y-hidden overflow-x-hidden"
     >
       <div className="lg:grid lg:grid-cols-2 rows-2 justify-between gap-[10rem] place-items-baseline ">
         <div className="flex flex-col">

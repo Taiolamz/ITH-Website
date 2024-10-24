@@ -11,7 +11,8 @@ const Section = ({
   id?: string;
 }) => {
   return (
-    <section id={id} className={` container mx-auto px-4 py-5 ${className}`}>
+    <section id={id} className={` container mx-auto px-4 lg:max-w-[full] ${className}`}>
+    {/* <section id={id} className={` container mx-auto px-4 py-5 ${className}`}> */}
       {children}
       <SliderUp />
     </section>

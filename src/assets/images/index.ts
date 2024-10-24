@@ -31,6 +31,7 @@ export { default as GalleryImageTwo } from "./png/gallery-image-two.png";
 export { default as GalleryImageThree } from "./png/gallery-image-three.png";
 export { default as GalleryImageFour } from "./png/gallery-image-four.png";
 export { default as GalleryImageFive } from "./png/gallery-image-five.png";
+export { default as GalleryImageSixteen } from "./png/gallery-image-sixteen.png";
 
 // new added images start
 export { default as GalleryImageSix } from "./png/gallery-image-six.png";

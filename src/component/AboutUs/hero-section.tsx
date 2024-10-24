@@ -19,7 +19,7 @@ const AboutUsHeroSection = ({
               isMobile ? AboutUsMobileHeroImage : AboutUsHeroImage
             })`,
           }}
-          className="lg:h-[calc(100vh-300px)] h-screen w-full bg-cover bg-center relative overflow-hidden"
+          className="lg:h-[calc(100vh-250px)] h-screen w-full bg-cover bg-center relative overflow-hidden"
           ref={heroSectionRef}
         >
           <HeroOverlayBg />

@@ -11,7 +11,7 @@ const AboutUs = () => {
     window.open(path, "_blank");
   };
   return (
-    <Section className=" w-screen lg:mt-20 lg:overflow-x-auto overflow-x-hidden overflow-y-hidden mt-16 flex flex-col gap-14 justify-center text-center">
+    <Section className="w-screen pb-10 lg:mt-20 lg:overflow-x-auto overflow-x-hidden overflow-y-hidden mt-16 flex flex-col gap-14 justify-center text-center">
       <div className=" flex flex-col items-center gap-6 justify-center">
         <h1
           data-aos="fade-up"
@@ -33,6 +33,7 @@ const AboutUs = () => {
         </p>
       </div>
 
+      {/* <div className="flex w-full columns-3 gap-10 "> */}
       <div className="lg:flex lg:justify-between lg:items-center grid place-items-center grid-rows-3 gap-3 ">
         {about_us.map((chi, idx) => {
           const { label, image, subsidiary, content, logo, path } = chi;

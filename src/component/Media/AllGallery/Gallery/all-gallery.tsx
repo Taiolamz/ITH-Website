@@ -1,7 +1,7 @@
 import { Section } from "../../../Reusables/Container";
 import { all_gallery } from "./lists";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const AllGalleryImages = () => {
   return (
@@ -11,10 +11,10 @@ const AllGalleryImages = () => {
         {all_gallery.map((chi, idx) => (
           <div key={idx} className="relative">
             <LazyLoadImage
-            
               alt={`all-gallery-images-${idx + 1}`}
               src={chi}
-              className="rounded-[5px] w-full h-[400px] "
+              className="rounded-[5px] lg:max-w-full w-full  "
+              // className="rounded-[5px] lg:max-w-full w-full h-[300px] lg:max-h-full "
               effect="blur"
               srcSet={`${chi} 300w, ${chi} 800w`}
               wrapperProps={{

@@ -3,7 +3,7 @@ import { Section } from "../Reusables/Container";
 const Anniversary = () => {
   return (
     <Section
-      className="lg:h-screen lg:overflow-x-auto overflow-x-hidden overflow-y-hidden flex flex-col justify-center"
+      className="lg:h-screen lg:overflow-x-hidden lg:mt-20 overflow-x-hidden lg:max-w-full overflow-y-hidden flex flex-col justify-center"
       id={"Anniversary"}
     >
       <div className="lg:grid lg:grid-cols-[_.5fr_1fr] gap-10 rows-1 place-items-center">
@@ -29,7 +29,7 @@ const Anniversary = () => {
           <p
             data-aos="fade-left"
             data-aos-duration="500"
-            className="lg:w-[772px] lg:text-base text-sm  font-light lg:leading-8 leading-6"
+            className="lg:w-[772px] lg:max-w-full lg:text-base text-sm  font-light lg:leading-8 leading-6"
           >
             Founded in 2010, our journey began with the establishment of IT
             Horizons, an IT solutions firm dedicated to delivering innovative
@@ -38,7 +38,7 @@ const Anniversary = () => {
           <p
             data-aos="fade-left"
             data-aos-duration="500"
-            className="lg:w-[772px] lg:text-base text-sm font-light lg:leading-8 leading-6"
+            className="lg:w-[772px] lg:max-w-full lg:text-base text-sm font-light lg:leading-8 leading-6"
           >
             In 2019, we diversified our operations with the launch of Zojatech,
             a forward-thinking software development company focused on digital
