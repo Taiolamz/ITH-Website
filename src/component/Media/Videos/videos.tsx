@@ -58,7 +58,7 @@ const Videos = () => {
                     // fontWeight={500}
                   />
                 </div>
-                <div className="absolute top-1/2 lg:p-0 p-2 grid  space-y-16 text-white">
+                <div className="absolute top-1/2  lg:pl-4 lg:mb-4 p-2 grid  space-y-16 text-white">
                   <div className="space-y-5">
                     <h1 className="lg:text-2xl !lg:mt-10 text-sm">{title}</h1>
                     <h5 className="lg:text-sm text-xs lg:w-[315px] lg:max-w-full w-full">
@@ -107,7 +107,7 @@ const Videos = () => {
                     // fontWeight={500}
                   />
                 </div>
-                <div className="absolute left-0 top-1/2 bottom-0  lg:p-8 p-2 grid  space-y-16 text-white">
+                <div className="absolute left-0 top-1/2 bottom-0 lg:-mt-4  lg:p-8 p-2 grid  space-y-16 text-white">
                   <div className="space-y-5">
                     <h1 className="lg:text-lg text-sm lg:w-[315px] lg:max-w-full ">
                       {title}
