@@ -54,8 +54,15 @@ const MobileHeaderNav = ({
           scrolled ? "bg-white" : "bg-transparent"
         } flex justify-between items-center py-3 px-5 transition-all duration-300`}
       >
-        <Link to="/home" className="">
+        <Link to="/home" className="flex items-center">
           <img src={scrolled ? ITHLogoBlue : ITHLogo} alt="logo" className="" />
+          <p
+            className={`text-lg font-bold ${
+              scrolled ? "text-[#004BFF]" : "text-white"
+            } transition-all duration-300`}
+          >
+            ITH HOLDINGS
+          </p>
         </Link>
         <HarmbourgerMenu
           className={`${scrolled ? "!bg-[#002887]" : "white"} rounded-[1px]`}

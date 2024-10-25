@@ -1,5 +1,5 @@
 // export { default as ITHLogo } from "./png/ITHLogo.png";
-export { default as ITHLogo } from "./png/ITHLogo.png";
+export { default as ITHLogo } from "./png/ITHLogo.svg";
 export { default as HeroImage } from "./png/hero-image.png";
 export { default as DellLogo } from "./png/dell-logo.png";
 export { default as ZohoLogo } from "./png/zoho-logo.png";

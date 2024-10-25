@@ -46,8 +46,9 @@ const HeaderNav = ({
         scrolled ? "bg-white" : "bg-transparent"
       } z-20 fixed top-0 w-full hidden lg:flex lg:justify-between transition-all duration-300 items-center   m-auto px-14 h-[80px]`}
     >
-      <Link to="/home" className="absolute lg:relative left-0">
+      <Link to="/home" className="absolute lg:relative lg:ml-4 left-0 gap-0 flex items-center  ">
         <img src={scrolled ? ITHLogoBlue : ITHLogo} alt="logo" className="" />
+        <p className={`text-lg font-bold ${scrolled  ?"text-[#004BFF]":"text-white"} transition-all duration-300`}>ITH HOLDINGS</p>
       </Link>
 
       <ul className="lg:flex hidden gap-10  items-center">
