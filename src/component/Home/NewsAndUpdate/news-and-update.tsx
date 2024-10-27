@@ -29,7 +29,7 @@ const NewsAndUpdate = () => {
           return (
             <div
               key={idx}
-              className="flex flex-col    bg-white shadow-xl hover:shadow-none duration-300 transition-all group/bg rounded-b-[5px] overflow-hidden"
+              className="flex flex-col bg-white shadow-xl hover:shadow-none duration-300 transition-all group/bg rounded-b-[5px] overflow-hidden"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={delay}
@@ -57,12 +57,12 @@ const NewsAndUpdate = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2 lg:p-10 p-5 h-full transition-all duration-300 bg-white group-hover/bg:bg-blue-100  relative overflow-hidden">
+              <div className="flex flex-col gap-2 lg:p-5 p-5 h-full transition-all duration-300 bg-white group-hover/bg:bg-blue-100  relative overflow-hidden">
                 <div className="absolute inset-0 bg-blue-100 transform translate-x-full  transition-transform duration-300 group-hover/bg:translate-x-0 rounded-l-[50rem]"></div>{" "}
                 <p className="lg:w-[315px] lg:max-w-full lg:text-base text-sm w-full relative z-10">
                   {content}
                 </p>
-                <p className="text-xs relative z-10">{date}</p>
+                <p className="text-xs relative z-10 mt-auto">{date}</p>
               </div>
             </div>
           );

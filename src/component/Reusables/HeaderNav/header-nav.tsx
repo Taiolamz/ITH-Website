@@ -18,7 +18,7 @@ const HeaderNav = ({
       if (heroSection) {
         // const heroHeight = heroSection.offsetHeight;
         const scrollTop = window.scrollY;
-        if (scrollTop > 100) {
+        if (scrollTop > 80) {
           setScrolled(true);
         } else {
           setScrolled(false);
@@ -60,7 +60,7 @@ const HeaderNav = ({
               <li key={idx} className="group relative">
                 <div className="flex gap-[.4rem] items-center cursor-pointer">
                   <span
-                    className={`text-base font-light transition-all duration-300 ${
+                    className={`text-base font-normal transition-all duration-300 ${
                       scrolled ? "text-[#014CFF]" : "text-white"
                     }`}
                   >
@@ -100,7 +100,7 @@ const HeaderNav = ({
               key={idx}
               to={path}
               className={({ isActive }) =>
-                `text-base font-light transition-all duration-200 ${
+                `text-base font-normal transition-all duration-200 ${
                   scrolled ? "text-[#014CFF]" : "text-white"
                 } ${isActive ? "" : ""}`
               }

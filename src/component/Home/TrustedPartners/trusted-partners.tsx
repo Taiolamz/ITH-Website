@@ -7,11 +7,11 @@ const TrustedPartners = () => {
   return (
     <Section className="overflow-hidden relative">
     <div className="flex gap-3 items-center">
-      <p className="p-3 py-5 text-[#212121CC] lg:text-base text-sm">Our Trusted Partners</p>
+      <p className="p-3 py-5 lg:text-base text-sm text-[#002887]">Our Trusted Partners</p>
       <img src={HrLine} alt="horizontal line" />
     </div>
     <motion.div
-      className="flex gap-20 px-28"
+      className="flex lg:gap-20 gap-10 px-28"
       animate={{ x: ["0%", "-100%"] }}
       transition={{
         duration: 20, // Increase the duration for a slower animation

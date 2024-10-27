@@ -14,7 +14,7 @@ const NewsAndLetter = () => {
   const inputClass =
     "lg:py-[14px] py-[8px] px-[16px] lg:overflow-x-auto overflow-x-hidden w-full placeholder:font-light placeholder:text-sm text-sm text-white bg-[#FBFBFB4D] rounded-[5px] outline-none";
   return (
-    <Section className="overflow-hidden lg:mt-40 mt-10 lg:columns-2 gap-0 grid-rows-2  place-items-center">
+    <Section className="overflow-hidden lg:mt-40 mb-20 mt-10 lg:columns-2 gap-0 grid-rows-2  place-items-center">
       {/* left content display */}
       <div
         // data-aos="fade-up"

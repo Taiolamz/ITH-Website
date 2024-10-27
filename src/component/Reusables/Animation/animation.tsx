@@ -32,7 +32,7 @@ export const TypewriterEffect: React.FC<TypewriterEffectProps> = ({
   typingSpeed = 100,
 }) => {
   const [displayedText, setDisplayedText] = useState<string>("");
-  const [isComplete, setIsComplete] = useState<boolean>(false);
+  // const [isComplete, setIsComplete] = useState<boolean>(false);
 
   useEffect(() => {
     let index = 0;
@@ -44,7 +44,7 @@ export const TypewriterEffect: React.FC<TypewriterEffectProps> = ({
         index++;
       } else {
         clearInterval(typeWriter);
-        setIsComplete(true);
+        // setIsComplete(true);
       }
     }, typingSpeed);
 
@@ -58,7 +58,7 @@ export const TypewriterEffect: React.FC<TypewriterEffectProps> = ({
       transition={{ duration: 0.5 }}
     >
       {displayedText}
-      {isComplete && <span className="text-transparent">|</span>}{" "}
+      {/* {isComplete && <span className="text-transparent">|</span>}{" "} */}
     </motion.div>
   );
 };

@@ -4,7 +4,7 @@ import { Section } from "../../Reusables/Container";
 
 const ModernBusiness = () => {
   return (
-    <Section className="lg:mt-40 mt-10 lg:overflow-x-auto overflow-x-hidden overflow-y-hidden flex flex-col justify-center ">
+    <Section className="lg:mt-40  lg:overflow-x-auto overflow-x-hidden overflow-y-hidden flex flex-col justify-center ">
       <div
         className="lg:flex lg:justify-between grid grid-rows-2"
         data-aos="fade-up"
@@ -17,7 +17,7 @@ const ModernBusiness = () => {
           <h1 className="text-[#121212] text-2xl lg:leading-normal leading-8 font-bold lg:text-[40px] lg:w-[590px]">
             Your Business Partner in Emerging Technology
           </h1>
-          <div className="mt-auto">
+          <div className="lg:mt-28 mt-auto">
           <Button
             toPath={"/contact"}
             btnText="Contact Us"
