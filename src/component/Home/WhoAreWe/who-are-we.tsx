@@ -8,11 +8,17 @@ const WhoAreWe = () => {
     <Section className="lg:mt-36 mt-10 !pb-0">
       <div className="grid lg:grid-cols-[1.7fr_1fr] rows-2 gap-4   w-full items-center relative ">
         <div className="w-full relative">
-          <div className="bg-[#002887] lg:w-full !rounded-[5px]  lg:-mb-8 lg:ml-8 lg:h-[300px] w-full h-[40px]  absolute lg:bottom-0 -bottom-4"></div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="700"
+            data-aos-delay="600"
+            className="bg-[#002887] lg:w-full !rounded-[5px]  lg:-mb-8 lg:ml-8 lg:h-[300px] w-full h-[40px]  absolute lg:bottom-0 -bottom-4"
+          ></div>
 
           <div
             className="bg-white  py-2 lg:p-6 lg:px-5 px-6 pb-5  lg:py-16  rounded-[5px] lg:w-full z-10 lg:pl-14"
             data-aos="fade-right"
+            data-aos-delay="300"
             data-aos-duration="1000"
           >
             <h3 className="text-[#002887] lg:text-sm font-medium text-xs lg:my-10 my-6">
