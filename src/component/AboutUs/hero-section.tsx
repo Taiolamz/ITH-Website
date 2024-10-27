@@ -12,7 +12,7 @@ const AboutUsHeroSection = ({
 }) => {
   return (
     <section className="relative">
-      <LazyLoadComponent   > 
+      <LazyLoadComponent>
         <div
           style={{
             backgroundImage: `url(${

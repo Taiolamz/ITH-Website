@@ -1,6 +1,7 @@
 import { HeroImage, MobileBgHeroImage } from "../../../assets/images";
 import { TypewriterEffect } from "../../Reusables/Animation/animation";
 import { HeroHeader } from "../../Reusables/HeroHeader";
+import { HeroOverlayBg } from "../../Reusables/HeroHeader/hero-overlay";
 import SliderDown from "../../Reusables/SliderDown/slider-down";
 import TrustedPartners from "../TrustedPartners/trusted-partners";
 
@@ -19,6 +20,7 @@ const HeroSection = ({
         className="h-[calc(100vh-150px)]  overflow-hidden  w-full bg-cover relative bg-center"
         ref={heroSectionRef}
       >
+        <HeroOverlayBg overlayBg="black" />
         <HeroHeader
           headerText={
             <TypewriterEffect text="Innnovating Technology for Business Optimization" />
