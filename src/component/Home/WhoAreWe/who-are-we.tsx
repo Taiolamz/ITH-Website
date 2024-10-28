@@ -45,8 +45,14 @@ const WhoAreWe = () => {
           data-aos={isMobile ? "fade-right" : "fade-left"}
           data-aos-duration="1000"
           style={{ backgroundImage: `url(${WhoAreWeImg})` }}
-          className=" lg:-ml-24   lg:bg-cover bg-contain bg-no-repeat lg:mt-0 mt-10 -mb-14 lg:mb-0 relative w-full  lg:w-[calc(100%+6rem)] h-[420px]   rounded-lg"
+          className=" lg:-ml-24   lg:bg-cover bg-contain bg-no-repeat lg:mt-0 mt-10 -mb-14 sm:mb-10 sm:w-full sm:bg-center lg:bg-center lg:mb-0 relative w-full  lg:w-[calc(100%+6rem)] h-[420px]   rounded-lg"
         ></div>
+        {/* <div
+          data-aos={isMobile ? "fade-right" : "fade-left"}
+          data-aos-duration="1000"
+          style={{ backgroundImage: `url(${WhoAreWeImg})` }}
+          className=" lg:-ml-24   lg:bg-cover bg-contain bg-no-repeat lg:mt-0 mt-10 -mb-14 lg:mb-0 relative w-full  lg:w-[calc(100%+6rem)] h-[420px]   rounded-lg"
+        ></div> */}
       </div>
     </Section>
   );
