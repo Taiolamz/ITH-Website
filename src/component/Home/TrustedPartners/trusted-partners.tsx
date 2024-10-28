@@ -24,7 +24,7 @@ const TrustedPartners = () => {
           key={idx}
           src={partner}
           alt={`Partner ${idx}`}
-          className="w-32 h-auto"
+          className="w-[64px] h-[34px]"
         />
       ))}
     </motion.div>

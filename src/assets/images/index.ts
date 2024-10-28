@@ -10,7 +10,7 @@ export { default as MicrosoftLogo } from "./png/microsoft-logo.png";
 export { default as DellEMCLogo } from "./png/dell-emc-logo.png";
 export { default as HpLogo } from "./png/hp-logo.png";
 export { default as TermiiLogo } from "./png/termii-logo.png";
-// export { default as LenovoLogo } from "./png/lenovo-logo.png";
+export { default as LenovoLogo } from "./png/lenovo-logo.png";
 export { default as CommScopeLogo } from "./png/commscope.png";
 export { default as ExpressWalletLogo } from "./png/express-wallet-logo.png";
 export { default as Infrastructure } from "./png/infrastructure-image.png";
