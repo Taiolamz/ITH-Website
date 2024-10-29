@@ -1,5 +1,10 @@
 // import { path } from "framer-motion/client";
-import { FacebookIcon, InstaIcon, LinkedinIcon, TwitterIcon } from "../../../assets/icons";
+import {
+  FacebookIcon,
+  InstaIcon,
+  LinkedinIcon,
+  TwitterIcon,
+} from "../../../assets/icons";
 
 export const footer = [
   {
@@ -8,11 +13,24 @@ export const footer = [
   },
   {
     label: "Subsidiaries",
-    path: "/subsidiaries",
+    drop: [
+      {
+        label: "IT Horizons",
+        path: "https://ithorizonsgroup.com/",
+      },
+      {
+        label: "Zojatech",
+        path: "https://zojatech.com/",
+      },
+      {
+        label: "Zojapay",
+        path: "https://zojapay.com/",
+      },
+    ],
   },
   {
-    label: "News",
-    path: "/news",
+    label: "Media",
+    path: "/media",
   },
   {
     label: "Career",

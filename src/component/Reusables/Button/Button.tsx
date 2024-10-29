@@ -8,6 +8,7 @@ const Button = ({
   toPath,
   spanClass,
   spanClassTwo,
+  onClick,
 }: {
   type?: "reset" | "submit" | "button";
   btnText?: string;
@@ -15,10 +16,10 @@ const Button = ({
   spanClass?: string;
   toPath?: string;
   spanClassTwo?: string;
+  onClick?: () => void;
 }) => {
- 
   return (
-    <>
+    <div onClick={onClick}>
       <Link to={toPath || "#"}>
         <button
           type={type}
@@ -40,7 +41,7 @@ const Button = ({
           </span>
         </button>
       </Link>
-    </>
+    </div>
   );
 };
 

@@ -29,7 +29,7 @@ const HeroHeader = ({
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-easing="ease-in-out"
-          className="text-white lg:w-[450px] lg:max-w-full w-[300px] lg:leading-7 leading-6 text-sm lg:text-"
+          className="text-white lg:w-[520px] lg:max-w-full w-[300px] lg:leading-7 leading-6 text-sm lg:text-"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
         >
           {content}

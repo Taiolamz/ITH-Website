@@ -20,7 +20,7 @@ export const recent_news = [
     path: "https://medium.com/@ithorizons/td-africa-it-horizons-strengthen-with-cisco-cybersecurity-training-b78503ca6822",
     content:
       "TD Africa and IT Horizons Strengthen with Cisco Cyber Security Training.",
-    date: "AUGUST 30, 2024",
+    date: "AUGUST 19, 2024",
     image: SecurityTrainingImg,
     alt: "image two",
   },

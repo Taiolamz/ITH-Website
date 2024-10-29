@@ -3,6 +3,7 @@ import { CheckIcon } from "../../../assets/icons";
 import { Section } from "../../Reusables/Container";
 import { letter_frequency, news_letter } from "./lists";
 import { Button } from "../../Reusables/Button";
+import AlertDialog from "../../Dialog/dialog";
 
 const NewsAndLetter = () => {
   const [selectedFrequency, setSelectedFrequency] = useState("");
@@ -13,6 +14,10 @@ const NewsAndLetter = () => {
   const isMobile = window.innerWidth < 768;
   const inputClass =
     "lg:py-[14px] py-[8px] px-[16px] lg:overflow-x-auto overflow-x-hidden w-full placeholder:font-light placeholder:text-sm text-sm text-white bg-[#FBFBFB4D] rounded-[5px] outline-none";
+
+  const [successModal, setSuccessModal] = useState(false);
+
+  // note that yup, formik has been installed in this codebase
   return (
     <Section className="overflow-hidden lg:mt-40 mb-20 mt-10 lg:columns-2 gap-0 grid-rows-2  place-items-center">
       {/* left content display */}
@@ -25,8 +30,9 @@ const NewsAndLetter = () => {
         <h1 className="lg:text-5xl text-3xl text-white font-medium">
           Newsletter
         </h1>
-        <p className="my-6 text-white lg:text-base text-xs">
-          Everything update about IT Holdings in your inbox
+        <p className="my-6 text-white lg:text-base w-[402px] text-xs">
+          Stay connected with ITH Holdings! Sign up for our newsletter to
+          receive exclusive updates about our company.
         </p>
         <div className="grid grid-rows-1 gap-8">
           {news_letter.map((chi, idx) => (
@@ -115,6 +121,7 @@ const NewsAndLetter = () => {
             </div>
 
             <Button
+              onClick={() => setSuccessModal(true)}
               toPath={"#"}
               className="text-white w-full hover:shadow-custom-white mt-5 border-white hover:bg-white hover:!text-[#002887]"
               spanClass="bg-white group-hover:text-[#002887]"
@@ -124,6 +131,30 @@ const NewsAndLetter = () => {
           </div>
         </form>
       </div>
+
+      {/* modal wrap (pops up on form success) */}
+
+      <AlertDialog
+        open={successModal}
+        onClose={() => setSuccessModal(false)}
+        dialogTitle={
+          <p
+            style={{ fontFamily: "Leckerli One, cursive" }}
+            className="text-[#002887] font-norml text-[48px] text-center"
+          >
+            Thank you!
+          </p>
+        }
+        dialogContent={
+          <p
+            style={{ fontFamily: "Poppins, sans-serif" }}
+            className="text-center px-6 leading-6 text-sm text-[#212121] lg:w-[478px] font-poppins"
+          >
+            Thank you for for subscribing to our newsletter. You should receive
+            a confirmation email soon.
+          </p>
+        }
+      />
     </Section>
   );
 };

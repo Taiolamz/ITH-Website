@@ -1,8 +1,8 @@
 export const news_letter = [
-  "Everything update about IT Holdings in your inbox",
-  "Everything update about IT Holdings in your inbox",
-  "Everything update about IT Holdings in your inbox",
-  "Everything update about IT Holdings in your inbox",
+  "No letter spam",
+  "We promise to respect your inbox",
+  "Just the information you need to stay informed",
+  "Join our community today!",
 ];
 
 export const letter_frequency = [

@@ -29,7 +29,7 @@ const AboutUs = () => {
           {" "}
           We are a dynamic conglomerate committed to driving technological
           innovation and excellence across multiple industries. We leverage our
-          expertise to deliver cutting-edge solutions. 2023
+          expertise to deliver cutting-edge solutions.
         </p>
       </div>
 
