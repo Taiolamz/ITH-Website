@@ -19,7 +19,7 @@ const HeroHeader = ({
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
-          className="font-semibold  lg:mb-0  text-white text-2xl lg:text-5xl w-[350px] lg:w-[650px] lg:leading-snug leading-9 mb-5"
+          className="font-semibold  lg:mb-3  text-white text-2xl lg:text-5xl w-[350px] lg:w-[650px] lg:leading-snug leading-9 mb-5"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
         >
           {headerText}
@@ -29,7 +29,7 @@ const HeroHeader = ({
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-easing="ease-in-out"
-          className="text-white lg:w-[520px] lg:max-w-full w-[300px] lg:leading-7 leading-6 text-sm lg:text-"
+          className="text-white lg:w-[520px] lg:mb-3 mb-0 lg:max-w-full w-[300px] lg:leading-7 leading-6 text-sm lg:text-"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
         >
           {content}
