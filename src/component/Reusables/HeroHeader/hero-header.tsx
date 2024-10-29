@@ -13,13 +13,13 @@ const HeroHeader = ({
   toPath?: string;
 }) => {
   return (
-    <div className="container lg:h-screen lg:pt-4 lg:px-4 mx-auto">
+    <div className="container z-[999] lg:h-screen lg:pt-4 lg:px-4 mx-auto">
       <div className="pl-4 py-5 absolute bottom-0 mb-10">
         <p
           data-aos="fade-up"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
-          className="font-semibold  lg:mb-3  text-white text-2xl lg:text-5xl w-[350px] lg:w-[650px] lg:leading-snug leading-9 mb-5"
+          className="font-semibold z-10 lg:mb-3  text-white text-2xl lg:text-5xl w-[350px] lg:w-[650px] lg:leading-snug leading-9 mb-5"
           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
         >
           {headerText}

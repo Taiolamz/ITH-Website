@@ -20,7 +20,7 @@ const CareerHeroSection = ({
         className="lg:h-[calc(100vh-250px)] h-screen overflow-hidden  w-full bg-cover relative bg-center"
         ref={heroSectionRef}
       >
-        <HeroOverlayBg opacity=".5" overlayBg="#121212" />
+        <HeroOverlayBg opacity="0.5" overlayBg="#121212" />
         {/* <HeroOverlayBg overlayBg="#121212"/> */}
         <HeroHeader
           headerText="Careers"
