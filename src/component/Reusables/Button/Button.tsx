@@ -41,16 +41,7 @@ const Button = ({
           </span>
         </button>
       </Link>
-      <br />
-      <>
-        {/* <div className="relative mt-[50px]">
-        <button className="border-blue-500 group  relative overflow-hidden  w-[150px] h-[30px] border rounded-[5px]">
-          <span className="group-hover:bg-[red] w-full h-[30px] absolute left-0 top-0 group-hover:translate-y-0 translate-y-full transition-all duration-300 transform "></span>
-          <span className="bg-[red] h-[24px] w-[20px] group:hover   rotate-[45deg] absolute top-4 -right-3 -bottom-4  "></span>
-          <p>Hello world</p>
-        </button> */}
-        {/* </div> */}
-      </>
+      
     </div>
   );
 };
